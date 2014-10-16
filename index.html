@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en" xml:lang="en">
+	<head>
+		<title>Jordan Jozwiak</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        
+        <link href="css/styles.css" rel="stylesheet" type="text/css">	
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+        <!-- Modernizr -->
+        <script src="js/modernizr.js"></script>
+        
+        <script>
+          $(function() {
+            $( "#card" ).draggable();
+          });
+        </script>
+
+	</head>
+	
+	<body>
+        <div id="highlight"></div>
+        <div id="header">
+            <div id="card" class="drag">
+                <img src="images/card_title.png">
+                <div name="card_content" >
+                    <div id="name"><strong>Jordan</strong> Jozwiak</div>
+                    <div id="subtitle">Dreamer. Creator. Tinkerer. (I build things)</div>
+                    <div class="description">I am the sort of person who gets excited when <strong>things break</strong> (because <strong>I get to fix them</strong>).  When I complete a feature, I <strong>keep innovating</strong> until think of two more changes to add to my lengthy //TODO list.</div>
+                    <div class="description">When I'm not developing, I might be acting, doing light design, writing fiction, or training for a triathlon.</div>
+                    <hr class="line">
+                    <div class="section_title">Projects</div>
+                    <!-- Place somewhere in the <body> of your page -->
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <img src="images/slide_me.jpg" />
+                            </li>
+                            <li>
+                                <a href="https://play.google.com/store/apps/details?id=com.jozapps.MetricConverter" target="_blank"><img src="images/slide_converter.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="https://play.google.com/store/apps/details?id=com.jozapps.NumberTwist" target="_blank"><img src="images/slide_numbertwist.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="https://play.google.com/store/apps/details?id=com.v1.v1golf2" target="_blank"><img src="images/slide_v1sports.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="http://superappbros.com/halo" target="_blank"><img src="images/slide_halo_data.jpg" /></a>
+                            </li>
+                            <li>
+                                <img src="images/slide_wright_stuff.jpg" />
+                            </li>
+                            <li>
+                                <img src="images/slide_atv.jpg" />
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="line">
+                    <div class="section_title">Blog</div>
+                    <div class="description">(Coming Soon).  I have a lot of thoughts on Android, design, coding practices, good features, and living a thoughtful life.  I don't claim to be right, I just want to engage in the conversation :)</div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+        
+      <!-- FlexSlider -->
+      <script defer src="js/jquery.flexslider.js"></script>
+
+      <script type="text/javascript">
+        $(function(){
+          SyntaxHighlighter.all();
+        });
+        $(window).load(function(){
+          $('.flexslider').flexslider({
+            animation: "slide",
+            start: function(slider){
+              $('body').removeClass('loading');
+            }
+          });
+        });
+      </script>
+      
+       <!-- Syntax Highlighter -->
+      <script type="text/javascript" src="js/shCore.js"></script>
+      <script type="text/javascript" src="js/shBrushXml.js"></script>
+      <script type="text/javascript" src="js/shBrushJScript.js"></script>
+
+      <!-- Optional FlexSlider Additions -->
+      <script src="js/jquery.easing.js"></script>
+      <script src="js/jquery.mousewheel.js"></script>
+      <script defer src="js/demo.js"></script>
+
+	</body>
+</html>
