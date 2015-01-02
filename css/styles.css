@@ -29,6 +29,10 @@ body
     background-repeat:repeat-xy;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 .description
 {
     padding-top: 16px;
@@ -37,10 +41,29 @@ body
     font-family: RobotoCondensed-Regular, Georgia, Palatino, Times New Roman, serif;
 }
 
+.header
+{
+    color: #333;
+    font-size: 18px;
+    font-family: RobotoCondensed-Regular, Georgia, Palatino, Times New Roman, serif;
+}
+
+.view-more {
+    color: #333;
+    font-size: 20px;
+    font-family: RobotoCondensed-Regular, Georgia, Palatino, Times New Roman, serif;
+    text-align: center;
+}
+
+.view-more:hover, .view-more:focus {
+    background-color: rgba(192,192,192,0.5);
+}
+
 .line
 {
     opacity: .5;
     background: #000;
+    height: 1px;
 }
 
 .section_title 
