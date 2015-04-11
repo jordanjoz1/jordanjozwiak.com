@@ -66,11 +66,24 @@ ul li {
     height: 1px;
 }
 
+.link
+{
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link:hover,.link:active,.link:focus
+{
+    color:rgba(0,0,0,0.6);
+    text-decoration:none;
+}
+
 .section_title 
 {
     font-size: 150%;
     margin-bottom: 8px;
-    font-family: Roboto-Regular, Georgia, Palatino, Times New Roman, serif;
+    font-family: Roboto-Medium, Georgia, Palatino, Times New Roman, serif;
 }
 
 .flexslider
