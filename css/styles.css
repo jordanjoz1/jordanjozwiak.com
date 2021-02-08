@@ -48,6 +48,16 @@ ul li {
     font-family: RobotoCondensed-Regular, Georgia, Palatino, Times New Roman, serif;
 }
 
+.social-icon
+{
+    color: #333;
+}
+
+.social-icon:hover {
+  opacity: 0.7;
+  text-decoration:none;
+}
+
 .view-more {
     color: #333;
     font-size: 20px;
@@ -173,6 +183,7 @@ ul li {
     color: #999;
     font-size: 15px;
     font-family: Roboto-Regular, Georgia, Palatino, Times New Roman, serif;
+    margin-bottom: 8px;
 }
 
 

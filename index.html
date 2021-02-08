@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" xml:lang="en">
+
 <head>
   <title>Jordan Jozwiak</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -13,9 +14,7 @@
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 
-  <link href="css/styles.css" rel="stylesheet" type="text/css">	
-  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -29,182 +28,98 @@
   <!-- Modernizr -->
   <script src="js/modernizr.js"></script>
 
+  <!-- Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
   <!-- scripts -->
   <script>
-            // make card draggable
-            $(function() {
-              $( "#card" ).draggable();
-            });
-
-          // track pageview
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-10417695-8', 'auto');
-          ga('send', 'pageview');
-          
-          function show(target) {
-            $(target).show(500);
-          }
-
-          function hide(target) {
-           $(target).hide(500);
-         }
-
-         function toggle(target) {
-           $(target).toggle('slow');
-         }
-         </script>
-
-       </head>
-
-       <body>
-        <div id="header">
-          <div id="card" class="drag">
-            <img class="fitted" src="images/card_title.png">
-            <div name="card_content" >
-              <div class="card-group">
-                <div id="name"><strong>Jordan</strong> Jozwiak</div>
-                <div id="subtitle">Dreamer. Creator. Tinkerer.</div>
-                <div class="description">I make things. I <strong>think</strong> creativity and analytical thought go hand-in-hand. I <strong>want</strong> to share an experience through apps, stories, and photography. I <strong>know</strong> that I am never done learning.</div>
-              </div>
-              <hr class="line">
-              <div class="card-group">
-                <div class="section_title">Programming</div>
-                <a href="https://github.com/jordanjoz1" target="_blank"><img class="ic-qtr" src="images/ic_github.png"></img></a>
-                <a href="https://bitbucket.org/jjozwiak" target="_blank"><img class="ic-qtr" src="images/ic_bitbucket.png"></img></a>
-              </div>
-              <hr class="line">
-              <div class="card-group">
-                <a class="link" href="https://www.flickr.com/photos/jordanjoz/"><div class="section_title">Photography</div></a>
-                <div id="XPAIWD7IQG"></div>
-              </div>
-              <hr class="line">
-              <div class="card-group">
-                <div class="section_title">Videography</div>
-                <div id="subtitle">Videos that I've produced or worked on.</div>
-                <div id="view-more-videography" class="view-more" onclick="show('#videography-content'); hide('#view-more-videography');">
-                  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                </div>
-                <div id="videography-content" class="description" style="display: none">
-                  <div class="header">Creative</div>
-                  <ul>
-                    <li><a href="https://www.youtube.com/watch?v=_YeJqQPVeEE" target="_blank">Where the Sidewalk Ends - A Short Film</a></li>
-                    <li><a href="http://www.imdb.com/video/wab/vi1378791705/" target="_blank">ET's Bicycle</a></li>
-                  </ul>
-                  <div class="header">Producer and Videographer</div>
-                  <ul>
-                    <li><a href="https://www.youtube.com/channel/UCHqQwbIcU-8icFnFs8QylMg" target="_blank">DoubleDutch University</li>
-                  </ul>
-                  <div class="header">Presenter</div>
-                  <ul>
-                    <li><a href="https://www.youtube.com/watch?v=9_9WHohcKu8" target="_blank">CS50 Seminar: Sleek Android Design</a> (2013)</li>
-                    <li><a href="https://www.youtube.com/watch?v=r991KoBR_98" target="_blank">CS50 Seminar: Android Apps (now with Jelly Beans!)</a> (2012)</li>
-                    <li><a href="http://cs50.tv/2011/fall/seminars/Android_applicationDevelopment/Android_applicationDevelopment.mp4" target="_blank">CS50 Seminar: Android Application Development</a> (2011)</li>
-                    <li><a href="https://www.youtube.com/watch?v=4XTSxFSs3kI" target="_blank">CS50 Short: Typecasting</a> (2012)</li>
-                    <li><a href="https://www.youtube.com/watch?v=aUxqesKDdEc" target="_blank">CS50 Short: Precedence</a> (2012)</li>
-                  </ul>
-                  <div class="header">Interviewer</div>
-                  <ul>
-                    <li><a href="https://www.youtube.com/watch?v=ayelJljOrhQ" target="_blank">CS50 Fair 2013</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=kqoL26wNEzE" target="_blank">CS50 Fair 2012</a></li>
-                  </ul>
-                </div>
-              </div>
-              <hr class="line">
-              <div class="card-group">
-                <div class="section_title">Projects</div>
-                <!-- Place somewhere in the <body> of your page -->
-                <div class="flexslider">
-                  <ul class="slides">
-                    <li>
-                      <img src="images/slide_me.jpg" />
-                    </li>
-                    <li>
-                      <a href="https://play.google.com/store/apps/details?id=com.jozapps.MetricConverter" target="_blank"><img src="images/slide_converter.jpg" /></a>
-                    </li>
-                    <li>
-                      <a href="https://play.google.com/store/apps/details?id=com.jozapps.NumberTwist" target="_blank"><img src="images/slide_numbertwist.jpg" /></a>
-                    </li>
-                    <li>
-                      <a href="https://play.google.com/store/apps/details?id=com.v1.v1golf2" target="_blank"><img src="images/slide_v1sports.jpg" /></a>
-                    </li>
-                    <li>
-                      <a href="http://superappbros.com/halo" target="_blank"><img src="images/slide_halo_data.jpg" /></a>
-                    </li>
-                    <li>
-                      <img src="images/slide_wright_stuff.jpg" />
-                    </li>
-                    <li>
-                      <img src="images/slide_atv.jpg" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <hr class="line">
-              <div id="currently-reading" class="card-group">
-                <a class="link" href="https://www.goodreads.com/review/list/31660870-jordan-jozwiak?shelf=currently-reading" target="_blank"><div class="section_title">Currently Reading</div></a>
-              </div>
-              <hr class="line">
-              <div class="card-group">
-                <a class="link" href="https://medium.com/@jordanjoz"><div class="section_title">Blog</div></a>
-                <script async src="https://static.medium.com/embed.js"></script><a class="m-profile"  href="https://medium.com/@jordanjoz">Jordan Jozwiak</a>
-              </div>
-            </div>
-          </div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-        </div>
-
-        <!-- FlexSlider -->
-        <script defer src="js/jquery.flexslider.js"></script>
-
-        <script type="text/javascript">
-        $(function(){
-          SyntaxHighlighter.all();
-        });
-        $(window).load(function(){
-          $('.flexslider').flexslider({
-            animation: "slide",
-            start: function(slider){
-              $('body').removeClass('loading');
-            }
-          });
-
-      //load GoodReads books using Yahoo proxy for CORS
-      var url = "https://www.goodreads.com/review/list/31660870?format=xml&key=sDDJYGkjhibhe44cTHbWw&v=2&shelf=currently-reading";
-      $.get("http://query.yahooapis.com/v1/public/yql",
-      {
-        q: "select * from xml where url=\""+url+"\"",
-        format: "xml"
-      },
-      function(xml){
-       $(xml).find("review").each(function(){
-        var cover_thumb = '<a href="' + $(this).find("link").first().text() + '" target="_blank"><img class="ic-qtr" src="' + $(this).find("image_url").first().text() + '"></img></a>'
-        $("#currently-reading").append(cover_thumb);          
-      });
-     }
-     );
+    // make card draggable
+    $(function () {
+      $("#card").draggable();
     });
-        </script>
 
-        <!-- Syntax Highlighter -->
-        <script type="text/javascript" src="js/shCore.js"></script>
-        <script type="text/javascript" src="js/shBrushXml.js"></script>
-        <script type="text/javascript" src="js/shBrushJScript.js"></script>
+    // track pageview
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'http://www.google-analytics.com/analytics.js', 'ga');
 
-        <!-- Optional FlexSlider Additions -->
-        <script src="js/jquery.easing.js"></script>
-        <script src="js/jquery.mousewheel.js"></script>
-        <script defer src="js/demo.js"></script>
+    ga('create', 'UA-10417695-8', 'auto');
+    ga('send', 'pageview');
 
-        <script src="https://flickrit.com/embed.js.php?id=XPAIWD7IQG"></script>
+    function show(target) {
+      $(target).show(500);
+    }
 
-      </body>
-      </html>
+    function hide(target) {
+      $(target).hide(500);
+    }
+
+    function toggle(target) {
+      $(target).toggle('slow');
+    }
+  </script>
+
+</head>
+
+<body>
+  <div id="header">
+    <div id="card" class="drag">
+      <img class="fitted" src="images/card_title.png">
+      <div name="card_content">
+        <div class="card-group">
+          <div id="name"><strong>Jordan</strong> Jozwiak</div>
+          <div id="subtitle">Enthusiastic Tinkerer.</div>
+          <a href="https://twitter.com/jordanjoz" class="fab fa-lg fa-twitter social-icon"></a>
+          <a href="https://github.com/jordanjoz1" class="fab fa-lg fa-github social-icon"></a>
+          <a href="https://bitbucket.org/jjozwiak" class="fab fa-lg fa-bitbucket social-icon"></a>
+          <div class="description">I like making things, telling stories, and working with great people.</div>
+        </div>
+        <hr class="line">
+        <div class="card-group">
+          <div class="section_title">Software</div>
+          <a class="link" href="https://medium.com/@jordanjoz">
+            <div class="header">Blog</div>
+          </a>
+          <div class="header">Speaking</div>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=KOjC3RhwKU4" target="_blank">Intro to Reactive Programming</a> (CS50 2018) [<a href="https://speakerdeck.com/jordanjoz1/intro-to-reactive-programming-and-rxjava-how-to-react" target="_blank">slides</a>]</li>
+            <li>Continuous Integration - AnDevCon (2016) [<a href="https://speakerdeck.com/jordanjoz1/continuous-integration-catch-bugs-and-improve-team-communication" target="_blank">slides</a>]</li>
+          </ul>
+        </div>
+        <hr class="line">
+        <div class="card-group">
+          <div class="section_title">Just for fun</div>
+          <div id="view-more-justforfun" class="view-more"
+            onclick="show('#justforfun-content'); hide('#view-more-justforfun');">
+            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+          </div>
+          <div id="justforfun-content" class="description" style="display: none">
+            
+            <a class="link" href="https://www.flickr.com/photos/jordanjoz/">
+              <div class="header">Photography</div>
+            </a>
+            <div class="header">Short Films</div>
+            <ul>
+              <li><a href="https://www.facebook.com/WatchVentureStudios/videos/462074877517747" target="_blank">Fan and
+                  Crane - A Short Film</a> - sometimes it's hard to make new friends. Nominee for Best Short, Golden Gate International Film Festival (2017)</li>
+              <li><a href="https://www.youtube.com/watch?v=_YeJqQPVeEE" target="_blank">Where the Sidewalk Ends - A
+                  Short Film</a> (2015)</li>
+              <li><a href="http://www.imdb.com/video/wab/vi1378791705/" target="_blank">ET's Bicycle</a> - made in 1
+                hour for a class teaching high schoolers to make stop motion short films. (2014)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+</body>
+</html>
